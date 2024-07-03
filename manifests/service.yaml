@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: simpleapp-service
+spec:
+  selector:
+    app: simpleapp
+  ports:
+  - port: 8008
+    targetPort: 8008
