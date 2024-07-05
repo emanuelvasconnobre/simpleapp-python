@@ -18,5 +18,8 @@ spec:
           limits:
             memory: "128Mi"
             cpu: "500m"
+        envFrom:
+        - configMapRef:
+            name: simpleapp-cm
         ports:
         - containerPort: 8008
